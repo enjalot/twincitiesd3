@@ -1,0 +1,279 @@
+
+d3 (core)
+
+Selections
+d3.select - select an element from the current document.
+d3.selectAll - select multiple elements from the current document.
+d3.selection - augment the selection prototype, or test instance types.
+d3.event - access the current user event for interaction.
+d3.mouse - gets the mouse position relative to a specified container.
+d3.touches - gets the touch positions relative to a specified container.
+
+Transitions
+
+d3.transition - start an animated transition.
+d3.ease - customize transition timing.
+d3.timer - start a custom animation timer.
+d3.interpolate - interpolate two values.
+d3.interpolateNumber - interpolate two numbers.
+d3.interpolateRound - interpolate two integers.
+d3.interpolateString - interpolate two strings.
+d3.interpolateRgb - interpolate two RGB colors.
+d3.interpolateHsl - interpolate two HSL colors.
+d3.interpolateLab - interpolate two L*a*b* colors.
+d3.interpolateHcl - interpolate two HCL colors.
+d3.interpolateArray - interpolate two arrays of values.
+d3.interpolateObject - interpolate two arbitrary objects.
+d3.interpolateTransform - interpolate two 2D matrix transforms.
+d3.interpolators - register a custom interpolator.
+
+Working with Arrays
+
+d3.ascending - compare two values for sorting.
+d3.descending - compare two values for sorting.
+d3.min - find the minimum value in an array.
+d3.max - find the maximum value in an array.
+d3.extent - find the minimum and maximum value in an array.
+d3.sum - compute the sum of an array of numbers.
+d3.mean - compute the arithmetic mean of an array of numbers.
+d3.median - compute the median of an array of numbers (the 0.5-quantile).
+d3.quantile - compute a quantile for a sorted array of numbers.
+d3.bisect - search for a value in a sorted array.
+d3.bisectRight - search for a value in a sorted array.
+d3.bisectLeft - search for a value in a sorted array.
+d3.bisector - bisect using an accessor.
+d3.shuffle - randomize the order of an array.
+d3.permute - reorder an array of elements according to an array of indexes.
+d3.zip - transpose a variable number of arrays.
+d3.transpose - transpose an array of arrays.
+d3.keys - list the keys of an associative array.
+d3.values - list the values of an associated array.
+d3.entries - list the key-value entries of an associative array.
+d3.merge - merge multiple arrays into one array.
+d3.range - generate a range of numeric values.
+d3.nest - group array elements hierarchically.
+d3.map - a shim for ES6 maps, since objects are not hashes!
+d3.set - a shim for ES6 sets, since objects are not hashes!
+
+Math
+
+d3.random.normal - generate a random number with a normal distribution.
+d3.random.logNormal - generate a random number with a log-normal distribution.
+d3.random.irwinHall - generate a random number with an Irwin–Hall distribution.
+d3.transform - compute the standard form of a 2D matrix transform.
+
+Loading External Resources
+
+d3.xhr - request a resource using XMLHttpRequest.
+d3.text - request a text file.
+d3.json - request a JSON blob.
+d3.html - request an HTML document fragment.
+d3.xml - request an XML document fragment.
+d3.csv - request a comma-separated values (CSV) file.
+d3.tsv - request a tab-separated values (TSV) file.
+
+String Formatting
+
+d3.format - format a number as a string.
+d3.formatPrefix - returns the [SI prefix] for the specified value and precision.
+d3.requote - quote a string for use in a regular expression.
+d3.round - rounds a value to some digits after the decimal point.
+
+CSV Formatting (d3.csv)
+
+d3.csv - request a comma-separated values (CSV) file.
+d3.tsv - request a tab-separated values (TSV) file.
+
+Colors
+
+d3.rgb - specify a color in RGB space.
+d3.hsl - specify a color in HSL space.
+d3.lab - specify a color in L*a*b* space.
+d3.hcl - specify a color in HCL space.
+
+Namespaces
+
+d3.ns.prefix - access or extend known XML namespaces.
+d3.ns.qualify - qualify a prefixed name, such as "xlink:href".
+
+Internals
+
+d3.functor - create a function that returns a constant.
+d3.rebind - rebind an inherited getter/setter method to a subclass.
+d3.dispatch - create custom event dispatchers.
+d3.scale (Scales)
+
+Quantitative
+
+d3.scale.linear - construct a linear quantitative scale.
+d3.scale.sqrt - construct a quantitative scale with a square root transform.
+d3.scale.pow - construct a quantitative scale with an exponential transform.
+d3.scale.log - construct a quantitative scale with an logarithmic transform.
+d3.scale.quantize - construct a linear quantitative scale with a discrete output range.
+d3.scale.threshold - construct a threshold scale with a discrete output range.
+d3.scale.quantile - construct a quantitative scale mapping to quantiles.
+d3.scale.identity - construct a linear identity scale.
+
+Ordinal
+
+d3.scale.ordinal - construct an ordinal scale.
+d3.scale.category10 - construct an ordinal scale with ten categorical colors.
+d3.scale.category20 - construct an ordinal scale with twenty categorical colors.
+d3.scale.category20b - construct an ordinal scale with twenty categorical colors.
+d3.scale.category20c - construct an ordinal scale with twenty categorical colors.
+
+
+d3.svg (SVG)
+
+Shapes
+
+d3.svg.line - create a new line generator.
+d3.svg.line.radial - create a new radial line generator.
+d3.svg.area - create a new area generator.
+d3.svg.area.radial - create a new area generator.
+d3.svg.arc - create a new arc generator.
+d3.svg.symbol - create a new symbol generator.
+d3.svg.symbolTypes - the array of supported symbol types.
+d3.svg.chord - create a new chord generator.
+d3.svg.diagonal - create a new diagonal generator.
+d3.svg.diagonal.radial - create a new diagonal generator.
+
+Axes
+
+d3.svg.axis - create a new axis generator.
+
+Controls
+
+d3.svg.brush - click and drag to select one- or two-dimensional regions.
+
+
+d3.time (Time)
+
+Time Formatting
+
+d3.time.format - create a new local time formatter for a given specifier.
+d3.time.format.utc - create a new UTC time formatter for a given specifier.
+d3.time.format.iso - the ISO 8601 UTC time formatter.
+
+Time Scales
+
+d3.time.scale - construct a linear time scale.
+
+Time Intervals
+
+d3.time.interval - a time interval in local time.
+d3.time.day - every day (12:00 AM).
+d3.time.days - alias for day.range.
+d3.time.dayOfYear - computes the day number.
+d3.time.hour - every hour (e.g., 1:00 AM).
+d3.time.hours - alias for hour.range.
+d3.time.minute - every minute (e.g., 1:02 AM).
+d3.time.minutes - alias for minute.range.
+d3.time.month - every month (e.g., February 1, 12:00 AM).
+d3.time.months - alias for month.range.
+d3.time.second - every second (e.g., 1:02:03 AM).
+d3.time.seconds - alias for second.range.
+d3.time.sunday - every Sunday (e.g., February 5, 12:00 AM).
+d3.time.sundays - alias for sunday.range.
+d3.time.sundayOfYear - computes the sunday-based week number.
+d3.time.monday - every Monday (e.g., February 5, 12:00 AM).
+d3.time.mondays - alias for monday.range.
+d3.time.mondayOfYear - computes the monday-based week number.
+d3.time.tuesday - every Tuesday (e.g., February 5, 12:00 AM).
+d3.time.tuesdays - alias for tuesday.range.
+d3.time.tuesdayOfYear - computes the tuesday-based week number.
+d3.time.wednesday - every Wednesday (e.g., February 5, 12:00 AM).
+d3.time.wednesdays - alias for wednesday.range.
+d3.time.wednesdayOfYear - computes the wednesday-based week number.
+d3.time.thursday - every Thursday (e.g., February 5, 12:00 AM).
+d3.time.thursdays - alias for thursday.range.
+d3.time.thursdayOfYear - computes the thursday-based week number.
+d3.time.friday - every Friday (e.g., February 5, 12:00 AM).
+d3.time.fridays - alias for friday.range.
+d3.time.fridayOfYear - computes the friday-based week number.
+d3.time.saturday - every Saturday (e.g., February 5, 12:00 AM).
+d3.time.saturdays - alias for saturday.range.
+d3.time.saturdayOfYear - computes the saturday-based week number.
+d3.time.week - alias for sunday.
+d3.time.weeks - alias for sunday.range.
+d3.time.weekOfYear - alias for sundayOfYear.
+d3.time.year - every year (e.g., January 1, 12:00 AM).
+d3.time.years - alias for year.range.
+
+
+d3.layout (Layouts)
+
+d3.layout.bundle - construct a new default bundle layout.
+d3.layout.chord - produce a chord diagram from a matrix of relationships.
+d3.layout.cluster - cluster entities into a dendrogram.
+d3.layout.force - position linked nodes using physical simulation.
+d3.layout.hierarchy - derive a custom hierarchical layout implementation.
+d3.layout.histogram - construct a new default histogram layout.
+d3.layout.pack - produce a hierarchical layout using recursive circle-packing.
+d3.layout.partition - recursively partition a node tree into a sunburst or icicle.
+d3.layout.pie - construct a new default pie layout.
+d3.layout.stack - construct a new default stack layout.
+d3.layout.tree - position a tree of nodes tidily.
+d3.layout.treemap - use recursive spatial subdivision to display a tree of nodes.
+
+
+d3.geo (Geography)
+
+Paths
+
+d3.geo.path - create a new geographic path generator.
+d3.geo.circle - create a circle generator.
+d3.geo.area - compute the spherical area of a given feature.
+d3.geo.bounds - compute the latitude-longitude bounding box for a given feature.
+d3.geo.centroid - compute the spherical centroid of a given feature.
+d3.geo.distance - compute the great-arc distance between two points.
+d3.geo.interpolate - interpolate between two points along a great arc.
+d3.geo.length - compute the length of a line string or the circumference of a polygon.
+
+Projections
+
+d3.geo.projection - create a standard projection from a raw projection.
+d3.geo.projectionMutator - create a standard projection from a mutable raw projection.
+d3.geo.albers - the Albers equal-area conic projection.
+d3.geo.albersUsa - a composite Albers projection for the United States.
+d3.geo.azimuthalEqualArea - the azimuthal equal-area projection.
+d3.geo.azimuthalEquidistant - the azimuthal equidistant projection.
+d3.geo.conicConformal - the conic conformal projection.
+d3.geo.conicEquidistant - the conic equidistant projection.
+d3.geo.conicEqualArea the conic equal-area (a.k.a. Albers) projection.
+d3.geo.equirectangular - the equirectangular (plate carreé) projection.
+d3.geo.gnomonic - the gnomonic projection.
+d3.geo.mercator - the spherical Mercator projection.
+d3.geo.orthographic - the azimuthal orthographic projection.
+d3.geo.stereographic - the azimuthal stereographic projection.
+d3.geo.azimuthalEqualArea.raw - the raw azimuthal equal-area projection.
+d3.geo.azimuthalEquidistant.raw - the azimuthal equidistant projection.
+d3.geo.conicConformal.raw - the raw conic conformal projection.
+d3.geo.conicEquidistant.raw - the raw conic equidistant projection.
+d3.geo.conicEqualArea.raw the raw conic equal-area (a.k.a. Albers) projection.
+d3.geo.equirectangular.raw - the raw equirectangular (plate carrée) projection.
+d3.geo.gnomonic.raw - the raw gnomonic projection.
+d3.geo.mercator.raw - the raw Mercator projection.
+d3.geo.orthographic.raw - the raw azimuthal orthographic projection.
+d3.geo.stereographic.raw - the raw azimuthal stereographic projection.
+d3.geo.transverseMercator.raw - the raw transverse Mercator projection.
+
+Streams
+
+d3.geo.stream - convert a GeoJSON object to a geometry stream.
+
+
+d3.geom (Geometry)
+
+d3.geom.voronoi - compute the Voronoi diagram for the specified points.
+d3.geom.delaunay - compute the Delaunay triangulation for the specified points.
+d3.geom.quadtree - constructs a quadtree for an array of points.
+d3.geom.polygon
+d3.geom.hull
+
+
+d3.behavior (Behaviors)
+
+d3.behavior.drag
+d3.behavior.zoom
+

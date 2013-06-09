@@ -1,0 +1,682 @@
+
+d3 (core)
+
+Selections
+
+d3.select - select an element from the current document.
+d3.selectAll - select multiple elements from the current document.
+selection.attr - get or set attribute values.
+selection.classed - add or remove CSS classes.
+selection.style - get or set style properties.
+selection.property - get or set raw properties.
+selection.text - get or set text content.
+selection.html - get or set inner HTML content.
+selection.append - create and append new elements.
+selection.insert - create and insert new elements before existing elements.
+selection.remove - remove elements from the document.
+selection.data - get or set data for a group of elements, while computing a relational join.
+selection.enter - returns placeholders for missing elements.
+selection.exit - returns elements that are no longer needed.
+selection.datum - get or set data for individual elements, without computing a join.
+selection.filter - filter a selection based on data.
+selection.sort - sort elements in the document based on data.
+selection.order - reorders elements in the document to match the selection.
+selection.on - add or remove event listeners for interaction.
+selection.transition - start a transition on the selected elements.
+selection.each - call a function for each selected element.
+selection.call - call a function passing in the current selection.
+selection.empty - returns true if the selection is empty.
+selection.node - access the first node in a selection.
+selection.select - subselect a descendant element for each selected element.
+selection.selectAll - subselect multiple descendants for each selected element.
+d3.selection - augment the selection prototype, or test instance types.
+d3.event - access the current user event for interaction.
+d3.mouse - gets the mouse position relative to a specified container.
+d3.touches - gets the touch positions relative to a specified container.
+Transitions
+
+d3.transition - start an animated transition.
+transition.delay - specify per-element delay in milliseconds.
+transition.duration - specify per-element duration in milliseconds.
+transition.ease - specify transition easing function.
+transition.attr - smoothly transition to the new attribute value.
+transition.attrTween - smoothly transition between two attribute values.
+transition.style - smoothly transition to the new style property value.
+transition.styleTween - smoothly transition between two style property values.
+transition.text - set the text content when the transition starts.
+transition.tween - specify a custom tween operator to run as part of the transition.
+transition.select - start a transition on a descendant element for each selected element.
+transition.selectAll - start a transition on multiple descendants for each selected element.
+transition.filter - filter a transition based on data.
+transition.transition - when this transition ends, start another one on the same elements.
+transition.remove - remove selected elements at the end of a transition.
+transition.each - add a listener for transition end events.
+transition.call - call a function passing in the current transition.
+d3.ease - customize transition timing.
+ease - a parametric easing function.
+d3.timer - start a custom animation timer.
+d3.timer.flush - immediately execute any zero-delay timers.
+d3.interpolate - interpolate two values.
+interpolate - a parametric interpolation function.
+d3.interpolateNumber - interpolate two numbers.
+d3.interpolateRound - interpolate two integers.
+d3.interpolateString - interpolate two strings.
+d3.interpolateRgb - interpolate two RGB colors.
+d3.interpolateHsl - interpolate two HSL colors.
+d3.interpolateLab - interpolate two L*a*b* colors.
+d3.interpolateHcl - interpolate two HCL colors.
+d3.interpolateArray - interpolate two arrays of values.
+d3.interpolateObject - interpolate two arbitrary objects.
+d3.interpolateTransform - interpolate two 2D matrix transforms.
+d3.interpolators - register a custom interpolator.
+Working with Arrays
+
+d3.ascending - compare two values for sorting.
+d3.descending - compare two values for sorting.
+d3.min - find the minimum value in an array.
+d3.max - find the maximum value in an array.
+d3.extent - find the minimum and maximum value in an array.
+d3.sum - compute the sum of an array of numbers.
+d3.mean - compute the arithmetic mean of an array of numbers.
+d3.median - compute the median of an array of numbers (the 0.5-quantile).
+d3.quantile - compute a quantile for a sorted array of numbers.
+d3.bisect - search for a value in a sorted array.
+d3.bisectRight - search for a value in a sorted array.
+d3.bisectLeft - search for a value in a sorted array.
+d3.bisector - bisect using an accessor.
+d3.shuffle - randomize the order of an array.
+d3.permute - reorder an array of elements according to an array of indexes.
+d3.zip - transpose a variable number of arrays.
+d3.transpose - transpose an array of arrays.
+d3.keys - list the keys of an associative array.
+d3.values - list the values of an associated array.
+d3.entries - list the key-value entries of an associative array.
+d3.merge - merge multiple arrays into one array.
+d3.range - generate a range of numeric values.
+d3.nest - group array elements hierarchically.
+nest.key - add a level to the nest hierarchy.
+nest.sortKeys - sort the current nest level by key.
+nest.sortValues - sort the leaf nest level by value.
+nest.rollup - specify a rollup function for leaf values.
+nest.map - evaluate the nest operator, returning an associative array.
+nest.entries - evaluate the nest operator, returning an array of key-values tuples.
+d3.map - a shim for ES6 maps, since objects are not hashes!
+map.has - returns true if the map contains the specified key.
+map.get - returns the value for the specified key.
+map.set - sets the value for the specified key.
+map.remove - removes the entry for specified key.
+map.keys - returns the map’s array of keys.
+map.values - returns the map’s array of values.
+map.entries - returns the map’s array of entries (key-values objects).
+map.forEach - calls the specified function for each entry in the map.
+d3.set - a shim for ES6 sets, since objects are not hashes!
+set.has - returns true if the set contains the specified value.
+set.add - adds the specified value.
+set.remove - removes the specified value.
+set.values - returns the set’s array of values.
+set.forEach - calls the specified function for each value in the set.
+Math
+
+d3.random.normal - generate a random number with a normal distribution.
+d3.random.logNormal - generate a random number with a log-normal distribution.
+d3.random.irwinHall - generate a random number with an Irwin–Hall distribution.
+d3.transform - compute the standard form of a 2D matrix transform.
+Loading External Resources
+
+d3.xhr - request a resource using XMLHttpRequest.
+xhr.header - set a request header.
+xhr.mimeType - set the Accept request header and override the response MIME type.
+xhr.response - set a response mapping function.
+xhr.get - issue a GET request.
+xhr.post - issue a POST request.
+xhr.send - issue a request with the specified method and data.
+xhr.abort - abort an outstanding request.
+xhr.on - add an event listener for "progress", "load" or "error" events.
+d3.text - request a text file.
+d3.json - request a JSON blob.
+d3.html - request an HTML document fragment.
+d3.xml - request an XML document fragment.
+d3.csv - request a comma-separated values (CSV) file.
+d3.tsv - request a tab-separated values (TSV) file.
+String Formatting
+
+d3.format - format a number as a string.
+d3.formatPrefix - returns the [SI prefix] for the specified value and precision.
+d3.requote - quote a string for use in a regular expression.
+d3.round - rounds a value to some digits after the decimal point.
+CSV Formatting (d3.csv)
+
+d3.csv - request a comma-separated values (CSV) file.
+d3.csv.parse - parse a CSV string into objects using the header row.
+d3.csv.parseRows - parse a CSV string into tuples, ignoring the header row.
+d3.csv.format - format an array of objects into a CSV string.
+d3.csv.formatRows - format an array of tuples into a CSV string.
+d3.tsv - request a tab-separated values (TSV) file.
+d3.tsv.parse - parse a TSV string into objects using the header row.
+d3.tsv.parseRows - parse a TSV string into tuples, ignoring the header row.
+d3.tsv.format - format an array of objects into a TSV string.
+d3.tsv.formatRows - format an array of tuples into a TSV string.
+Colors
+
+d3.rgb - specify a color in RGB space.
+rgb.brighter - increase RGB channels by some exponential factor (gamma).
+rgb.darker - decrease RGB channels by some exponential factor (gamma).
+rgb.hsl - convert from RGB to HSL.
+rgb.toString - convert an RGB color to a string.
+d3.hsl - specify a color in HSL space.
+hsl.brighter - increase lightness by some exponential factor (gamma).
+hsl.darker - decrease lightness by some exponential factor (gamma).
+hsl.rgb - convert from HSL to RGB.
+hsl.toString - convert an HSL color to a string.
+d3.lab - specify a color in L*a*b* space.
+lab.brighter - increase lightness by some exponential factor (gamma).
+lab.darker - decrease lightness by some exponential factor (gamma).
+lab.rgb - convert from L*a*b* to RGB.
+lab.toString - convert a L*a*b* color to a string.
+d3.hcl - specify a color in HCL space.
+hcl.brighter - increase lightness by some exponential factor (gamma).
+hcl.darker - decrease lightness by some exponential factor (gamma).
+hcl.rgb - convert from HCL to RGB.
+hcl.toString - convert an HCL color to a string.
+Namespaces
+
+d3.ns.prefix - access or extend known XML namespaces.
+d3.ns.qualify - qualify a prefixed name, such as "xlink:href".
+Internals
+
+d3.functor - create a function that returns a constant.
+d3.rebind - rebind an inherited getter/setter method to a subclass.
+d3.dispatch - create custom event dispatchers.
+dispatch.on - register an event listener.
+dispatch - dispatch an event to registered listeners.
+d3.scale (Scales)
+
+Quantitative
+
+d3.scale.linear - construct a linear quantitative scale.
+linear - get the range value corresponding to a given domain value.
+linear.invert - get the domain value corresponding to a given range value.
+linear.domain - get or set the scale's input domain.
+linear.range - get or set the scale's output range.
+linear.rangeRound - set the scale's output range, and enable rounding.
+linear.interpolate - get or set the scale's output interpolator.
+linear.clamp - enable or disable clamping of the output range.
+linear.nice - extend the scale domain to nice round numbers.
+linear.ticks - get representative values from the input domain.
+linear.tickFormat - get a formatter for displaying tick values.
+linear.copy - create a new scale from an existing scale.
+d3.scale.sqrt - construct a quantitative scale with a square root transform.
+d3.scale.pow - construct a quantitative scale with an exponential transform.
+pow - get the range value corresponding to a given domain value.
+pow.invert - get the domain value corresponding to a given range value.
+pow.domain - get or set the scale's input domain.
+pow.range - get or set the scale's output range.
+pow.rangeRound - set the scale's output range, and enable rounding.
+pow.interpolate - get or set the scale's output interpolator.
+pow.clamp - enable or disable clamping of the output range.
+pow.nice - extend the scale domain to nice round numbers.
+pow.ticks - get representative values from the input domain.
+pow.tickFormat - get a formatter for displaying tick values.
+pow.exponent - get or set the exponent power.
+pow.copy - create a new scale from an existing scale.
+d3.scale.log - construct a quantitative scale with an logarithmic transform.
+log - get the range value corresponding to a given domain value.
+log.invert - get the domain value corresponding to a given range value.
+log.domain - get or set the scale's input domain.
+log.range - get or set the scale's output range.
+log.rangeRound - set the scale's output range, and enable rounding.
+log.interpolate - get or set the scale's output interpolator.
+log.clamp - enable or disable clamping of the output range.
+log.nice - extend the scale domain to nice powers of ten.
+log.ticks - get representative values from the input domain.
+log.tickFormat - get a formatter for displaying tick values.
+log.copy - create a new scale from an existing scale.
+d3.scale.quantize - construct a linear quantitative scale with a discrete output range.
+quantize - get the range value corresponding to a given domain value.
+quantize.domain - get or set the scale's input domain.
+quantize.range - get or set the scale's output range (as discrete values).
+quantize.copy - create a new scale from an existing scale.
+d3.scale.threshold - construct a threshold scale with a discrete output range.
+threshold - get the range value corresponding to a given domain value.
+threshold.domain - get or set the scale's input domain.
+threshold.range - get or set the scale's output range (as discrete values).
+threshold.copy - create a new scale from an existing scale.
+d3.scale.quantile - construct a quantitative scale mapping to quantiles.
+quantile - get the range value corresponding to a given domain value.
+quantile.domain - get or set the scale's input domain (as discrete values).
+quantile.range - get or set the scale's output range (as discrete values).
+quantile.quantiles - get the scale's quantile bin thresholds.
+quantile.copy - create a new scale from an existing scale.
+d3.scale.identity - construct a linear identity scale.
+identity - the identity function.
+identity.invert - equivalent to identity; the identity function.
+identity.domain - get or set the scale's domain and range.
+identity.range - equivalent to identity.domain.
+identity.ticks - get representative values from the domain.
+identity.tickFormat - get a formatter for displaying tick values.
+identity.copy - create a new scale from an existing scale.
+Ordinal
+
+d3.scale.ordinal - construct an ordinal scale.
+ordinal - get the range value corresponding to a given domain value.
+ordinal.domain - get or set the scale's input domain.
+ordinal.range - get or set the scale's output range.
+ordinal.rangePoints - divide a continuous output range for discrete points.
+ordinal.rangeBands - divide a continuous output range for discrete bands.
+ordinal.rangeRoundBands - divide a continuous output range for discrete bands.
+ordinal.rangeBand - get the discrete range band width.
+ordinal.rangeExtent - get the minimum and maximum values of the output range.
+ordinal.copy - create a new scale from an existing scale.
+d3.scale.category10 - construct an ordinal scale with ten categorical colors.
+d3.scale.category20 - construct an ordinal scale with twenty categorical colors.
+d3.scale.category20b - construct an ordinal scale with twenty categorical colors.
+d3.scale.category20c - construct an ordinal scale with twenty categorical colors.
+d3.svg (SVG)
+
+Shapes
+
+d3.svg.line - create a new line generator.
+line - generate a piecewise linear curve, as in a line chart.
+line.x - get or set the x-coordinate accessor.
+line.y - get or set the y-coordinate accessor.
+line.interpolate - get or set the interpolation mode.
+line.tension - get or set the cardinal spline tension.
+line.defined - control whether the line is defined at a given point.
+d3.svg.line.radial - create a new radial line generator.
+line - generate a piecewise linear curve, as in a polar line chart.
+line.radius - get or set the radius accessor.
+line.angle - get or set the angle accessor.
+line.defined - control whether the line is defined at a given point.
+d3.svg.area - create a new area generator.
+area - generate a piecewise linear area, as in an area chart.
+area.x - get or set the x-coordinate accessors.
+area.x0 - get or set the x0-coordinate (baseline) accessor.
+area.x1 - get or set the x1-coordinate (topline) accessor.
+area.y - get or set the y-coordinate accessors.
+area.y0 - get or set the y0-coordinate (baseline) accessor.
+area.y1 - get or set the y1-coordinate (topline) accessor.
+area.interpolate - get or set the interpolation mode.
+area.tension - get or set the cardinal spline tension.
+area.defined - control whether the area is defined at a given point.
+d3.svg.area.radial - create a new area generator.
+area - generate a piecewise linear area, as in a polar area chart.
+area.radius - get or set the radius accessors.
+area.innerRadius - get or set the inner radius (baseline) accessor.
+area.outerRadius - get or set the outer radius (topline) accessor.
+area.angle - get or set the angle accessors.
+area.startAngle - get or set the angle (baseline) accessor.
+area.endAngle - get or set the angle (topline) accessor.
+area.defined - control whether the area is defined at a given point.
+d3.svg.arc - create a new arc generator.
+arc - generate a solid arc, as in a pie or donut chart.
+arc.innerRadius - get or set the inner radius accessor.
+arc.outerRadius - get or set the outer radius accessor.
+arc.startAngle - get or set the start angle accessor.
+arc.endAngle - get or set the end angle accessor.
+arc.centroid - compute the arc centroid.
+d3.svg.symbol - create a new symbol generator.
+symbol - generate categorical symbols, as in a scatterplot.
+symbol.type - get or set the symbol type accessor.
+symbol.size - get or set the symbol size (in square pixels) accessor.
+d3.svg.symbolTypes - the array of supported symbol types.
+d3.svg.chord - create a new chord generator.
+chord - generate a quadratic Bézier connecting two arcs, as in a chord diagram.
+chord.radius - get or set the arc radius accessor.
+chord.startAngle - get or set the arc start angle accessor.
+chord.endAngle - get or set the arc end angle accessor.
+chord.source - get or set the source arc accessor.
+chord.target - get or set the target arc accessor.
+d3.svg.diagonal - create a new diagonal generator.
+diagonal - generate a two-dimensional Bézier connector, as in a node-link diagram.
+diagonal.source - get or set the source point accessor.
+diagonal.target - get or set the target point accessor.
+diagonal.projection - get or set an optional point transform.
+d3.svg.diagonal.radial - create a new diagonal generator.
+diagonal - generate a two-dimensional Bézier connector, as in a node-link diagram.
+Axes
+
+d3.svg.axis - create a new axis generator.
+axis - creates or updates an axis for the given selection or transition.
+axis.scale - get or set the axis scale.
+axis.orient - get or set the axis orientation.
+axis.ticks - control how ticks are generated for the axis.
+axis.tickValues - specify tick values explicitly.
+axis.tickSubdivide - optionally subdivide ticks uniformly.
+axis.tickSize - specify the size of major, minor and end ticks.
+axis.tickPadding - specify padding between ticks and tick labels.
+axis.tickFormat - override the tick formatting for labels.
+Controls
+
+d3.svg.brush - click and drag to select one- or two-dimensional regions.
+brush - creates or updates a brush for the given selection or transition.
+brush.x - get or set the brush’s x-scale.
+brush.y - get or set the brush’s y-scale.
+brush.extent - get or set the brush’s extent.
+brush.clear - reset the brush extent.
+brush.empty - returns true if the brush extent is empty.
+brush.on - respond to events when the brush is moved.
+d3.time (Time)
+
+Time Formatting
+
+d3.time.format - create a new local time formatter for a given specifier.
+format - format a date into a string.
+format.parse - parse a string into a date.
+d3.time.format.utc - create a new UTC time formatter for a given specifier.
+d3.time.format.iso - the ISO 8601 UTC time formatter.
+Time Scales
+
+d3.time.scale - construct a linear time scale.
+scale - get the range value corresponding to a given domain value.
+scale.invert - get the domain value corresponding to a given range value.
+scale.domain - get or set the scale's input domain.
+scale.range - get or set the scale's output range.
+scale.rangeRound - set the scale's output range, and enable rounding.
+scale.interpolate - get or set the scale's output interpolator.
+scale.clamp - enable or disable clamping of the output range.
+scale.ticks - get representative values from the input domain.
+scale.tickFormat - get a formatter for displaying tick values.
+scale.copy - create a new scale from an existing scale.
+Time Intervals
+
+d3.time.interval - a time interval in local time.
+interval - alias for interval.floor.
+interval.range - returns dates within the specified range.
+interval.floor - rounds down to the nearest interval.
+interval.round - rounds up or down to the nearest interval.
+interval.ceil - rounds up to the nearest interval.
+interval.offset - returns a date offset by some interval.
+interval.utc - returns the UTC-equivalent time interval.
+d3.time.day - every day (12:00 AM).
+d3.time.days - alias for day.range.
+d3.time.dayOfYear - computes the day number.
+d3.time.hour - every hour (e.g., 1:00 AM).
+d3.time.hours - alias for hour.range.
+d3.time.minute - every minute (e.g., 1:02 AM).
+d3.time.minutes - alias for minute.range.
+d3.time.month - every month (e.g., February 1, 12:00 AM).
+d3.time.months - alias for month.range.
+d3.time.second - every second (e.g., 1:02:03 AM).
+d3.time.seconds - alias for second.range.
+d3.time.sunday - every Sunday (e.g., February 5, 12:00 AM).
+d3.time.sundays - alias for sunday.range.
+d3.time.sundayOfYear - computes the sunday-based week number.
+d3.time.monday - every Monday (e.g., February 5, 12:00 AM).
+d3.time.mondays - alias for monday.range.
+d3.time.mondayOfYear - computes the monday-based week number.
+d3.time.tuesday - every Tuesday (e.g., February 5, 12:00 AM).
+d3.time.tuesdays - alias for tuesday.range.
+d3.time.tuesdayOfYear - computes the tuesday-based week number.
+d3.time.wednesday - every Wednesday (e.g., February 5, 12:00 AM).
+d3.time.wednesdays - alias for wednesday.range.
+d3.time.wednesdayOfYear - computes the wednesday-based week number.
+d3.time.thursday - every Thursday (e.g., February 5, 12:00 AM).
+d3.time.thursdays - alias for thursday.range.
+d3.time.thursdayOfYear - computes the thursday-based week number.
+d3.time.friday - every Friday (e.g., February 5, 12:00 AM).
+d3.time.fridays - alias for friday.range.
+d3.time.fridayOfYear - computes the friday-based week number.
+d3.time.saturday - every Saturday (e.g., February 5, 12:00 AM).
+d3.time.saturdays - alias for saturday.range.
+d3.time.saturdayOfYear - computes the saturday-based week number.
+d3.time.week - alias for sunday.
+d3.time.weeks - alias for sunday.range.
+d3.time.weekOfYear - alias for sundayOfYear.
+d3.time.year - every year (e.g., January 1, 12:00 AM).
+d3.time.years - alias for year.range.
+d3.layout (Layouts)
+
+Bundle
+
+d3.layout.bundle - construct a new default bundle layout.
+bundle - apply Holten's hierarchical bundling algorithm to edges.
+Chord
+
+d3.layout.chord - produce a chord diagram from a matrix of relationships.
+chord.matrix - get or set the matrix data backing the layout.
+chord.padding - get or set the angular padding between chord segments.
+chord.sortGroups - get or set the comparator function for groups.
+chord.sortSubgroups - get or set the comparator function for subgroups.
+chord.sortChords - get or set the comparator function for chords (z-order).
+chord.chords - retrieve the computed chord angles.
+chord.groups - retrieve the computed group angles.
+Cluster
+
+d3.layout.cluster - cluster entities into a dendrogram.
+cluster.sort - get or set the comparator function for sibling nodes.
+cluster.children - get or set the accessor function for child nodes.
+cluster.nodes - compute the cluster layout and return the array of nodes.
+cluster.links - compute the parent-child links between tree nodes.
+cluster.separation - get or set the spacing function between neighboring nodes.
+cluster.size - get or set the layout size in x and y.
+Force
+
+d3.layout.force - position linked nodes using physical simulation.
+force.on - listen to updates in the computed layout positions.
+force.nodes - get or set the array of nodes to layout.
+force.links - get or set the array of links between nodes.
+force.size - get or set the layout size in x and y.
+force.linkDistance - get or set the link distance.
+force.linkStrength - get or set the link strength.
+force.friction - get or set the friction coefficient.
+force.charge - get or set the charge strength.
+force.gravity - get or set the gravity strength.
+force.theta - get or set the accuracy of the charge interaction.
+force.start - start or restart the simulation when the nodes change.
+force.resume - reheat the cooling parameter and restart simulation.
+force.stop - immediately terminate the simulation.
+force.alpha - get or set the layout's cooling parameter.
+force.tick - run the layout simulation one step.
+force.drag - bind a behavior to nodes to allow interactive dragging.
+Hierarchy
+
+d3.layout.hierarchy - derive a custom hierarchical layout implementation.
+hierarchy.sort - get or set the comparator function for sibling nodes.
+hierarchy.children - get or set the accessor function for child nodes.
+hierarchy.nodes - compute the layout and return the array of nodes.
+hierarchy.links - compute the parent-child links between tree nodes.
+hierarchy.value - get or set the value accessor function.
+hierarchy.revalue - recompute the hierarchy values.
+Histogram
+
+d3.layout.histogram - construct a new default histogram layout.
+histogram - compute the distribution of data using quantized bins.
+histogram.value - get or set the value accessor function.
+histogram.range - get or set the considered value range.
+histogram.bins - specify how values are organized into bins.
+histogram.frequency - compute the distribution as counts or probabilities.
+Pack
+
+d3.layout.pack - produce a hierarchical layout using recursive circle-packing.
+pack.sort - control the order in which sibling nodes are traversed.
+pack.children - get or set the children accessor function.
+pack.nodes - compute the pack layout and return the array of nodes.
+pack.links - compute the parent-child links between tree nodes.
+pack.value - get or set the value accessor used to size circles.
+pack.size - specify the layout size in x and y.
+pack.padding - specify the layout padding in (approximate) pixels.
+Partition
+
+d3.layout.partition - recursively partition a node tree into a sunburst or icicle.
+partition.sort - control the order in which sibling nodes are traversed.
+partition.children - get or set the children accessor function.
+partition.nodes - compute the partition layout and return the array of nodes.
+partition.links - compute the parent-child links between tree nodes.
+partition.value - get or set the value accessor used to size circles.
+partition.size - specify the layout size in x and y.
+Pie
+
+d3.layout.pie - construct a new default pie layout.
+pie - compute the start and end angles for arcs in a pie or donut chart.
+pie.value - get or set the value accessor function.
+pie.sort - control the clockwise order of pie slices.
+pie.startAngle - get or set the overall start angle of the pie.
+pie.endAngle - get or set the overall end angle of the pie.
+Stack
+
+d3.layout.stack - construct a new default stack layout.
+stack - compute the baseline for each series in a stacked bar or area chart.
+stack.values - get or set the values accessor function per series.
+stack.order - control the order in which series are stacked.
+stack.offset - specify the overall baseline algorithm.
+stack.x - get or set the x-dimension accessor function.
+stack.y - get or set the y-dimension accessor function.
+stack.out - get or set the output function for storing the baseline.
+Tree
+
+d3.layout.tree - position a tree of nodes tidily.
+tree.sort - control the order in which sibling nodes are traversed.
+tree.children - get or set the children accessor function.
+tree.nodes - compute the tree layout and return the array of nodes.
+tree.links - compute the parent-child links between tree nodes.
+tree.separation - get or set the spacing function between neighboring nodes.
+tree.size - specify the layout size in x and y.
+Treemap
+
+d3.layout.treemap - use recursive spatial subdivision to display a tree of nodes.
+treemap.sort - control the order in which sibling nodes are traversed.
+treemap.children - get or set the children accessor function.
+treemap.nodes - compute the treemap layout and return the array of nodes.
+treemap.links - compute the parent-child links between tree nodes.
+treemap.value - get or set the value accessor used to size treemap cells.
+treemap.size - specify the layout size in x and y.
+treemap.padding - specify the padding between a parent and its children.
+treemap.round - enable or disable rounding to exact pixels.
+treemap.sticky - make the layout sticky for stable updates.
+treemap.mode - change the treemap layout algorithm.
+d3.geo (Geography)
+
+Paths
+
+d3.geo.path - create a new geographic path generator.
+path - project the specified feature and render it to the context.
+path.projection - get or set the geographic projection.
+path.context - get or set the render context.
+path.pointRadius - get or set the radius to display point features.
+path.area - compute the projected area of a given feature.
+path.centroid - compute the projected centroid of a given feature.
+path.bounds - compute the projected bounds of a given feature.
+d3.geo.circle - create a circle generator.
+circle - generate a piecewise circle as a Polygon.
+circle.origin - specify the origin in latitude and longitude.
+circle.angle - specify the angular radius in degrees.
+circle.precision - specify the precision of the piecewise circle.
+d3.geo.area - compute the spherical area of a given feature.
+d3.geo.bounds - compute the latitude-longitude bounding box for a given feature.
+d3.geo.centroid - compute the spherical centroid of a given feature.
+d3.geo.distance - compute the great-arc distance between two points.
+d3.geo.interpolate - interpolate between two points along a great arc.
+d3.geo.length - compute the length of a line string or the circumference of a polygon.
+Projections
+
+d3.geo.projection - create a standard projection from a raw projection.
+projection - project the specified location.
+projection.invert - invert the projection for the specified point.
+projection.rotate - get or set the projection’s three-axis rotation.
+projection.center - get or set the projection’s center location.
+projection.translate - get or set the projection’s translation position.
+projection.scale - get or set the projection’s scale factor.
+projection.clipAngle - get or set the radius of the projection’s clip circle.
+projection.clipExtent - get or set the projection’s viewport clip extent, in pixels.
+projection.precision - get or set the precision threshold for adaptive resampling.
+projection.stream - wrap the specified stream listener, projecting input geometry.
+d3.geo.projectionMutator - create a standard projection from a mutable raw projection.
+d3.geo.albers - the Albers equal-area conic projection.
+albers.parallels - get or set the projection's two standard parallels.
+d3.geo.albersUsa - a composite Albers projection for the United States.
+d3.geo.azimuthalEqualArea - the azimuthal equal-area projection.
+d3.geo.azimuthalEquidistant - the azimuthal equidistant projection.
+d3.geo.conicConformal - the conic conformal projection.
+d3.geo.conicEquidistant - the conic equidistant projection.
+d3.geo.conicEqualArea the conic equal-area (a.k.a. Albers) projection.
+d3.geo.equirectangular - the equirectangular (plate carreé) projection.
+d3.geo.gnomonic - the gnomonic projection.
+d3.geo.mercator - the spherical Mercator projection.
+d3.geo.orthographic - the azimuthal orthographic projection.
+d3.geo.stereographic - the azimuthal stereographic projection.
+d3.geo.azimuthalEqualArea.raw - the raw azimuthal equal-area projection.
+d3.geo.azimuthalEquidistant.raw - the azimuthal equidistant projection.
+d3.geo.conicConformal.raw - the raw conic conformal projection.
+d3.geo.conicEquidistant.raw - the raw conic equidistant projection.
+d3.geo.conicEqualArea.raw the raw conic equal-area (a.k.a. Albers) projection.
+d3.geo.equirectangular.raw - the raw equirectangular (plate carrée) projection.
+d3.geo.gnomonic.raw - the raw gnomonic projection.
+d3.geo.mercator.raw - the raw Mercator projection.
+d3.geo.orthographic.raw - the raw azimuthal orthographic projection.
+d3.geo.stereographic.raw - the raw azimuthal stereographic projection.
+d3.geo.transverseMercator.raw - the raw transverse Mercator projection.
+Streams
+
+d3.geo.stream - convert a GeoJSON object to a geometry stream.
+stream.point - indicate an x, y (and optionally z) coordinate.
+stream.lineStart - indicate the start of a line or ring.
+stream.lineEnd - indicate the end of a line or ring.
+stream.polygonStart - indicate the start of a polygon.
+stream.polygonEnd - indicate the end of a polygon.
+stream.sphere - indicate a sphere.
+d3.geom (Geometry)
+
+Voronoi
+
+d3.geom.voronoi - compute the Voronoi diagram for the specified points.
+d3.geom.delaunay - compute the Delaunay triangulation for the specified points.
+Quadtree
+
+d3.geom.quadtree - constructs a quadtree for an array of points.
+quadtree.add - add a point to the quadtree.
+quadtree.visit - recursively visit nodes in the quadtree.
+Polygon
+
+d3.geom.polygon
+polygon.area
+polygon.centroid
+polygon.clip
+Hull
+
+d3.geom.hull
+d3.behavior (Behaviors)
+
+Drag
+
+d3.behavior.drag
+drag.origin
+drag.on
+Zoom
+
+d3.behavior.zoom
+zoom.on
+zoom.scale
+zoom.translate
+zoom.scaleExtent
+zoom.x
+zoom.y
+Last edited by mbostock, 3 months ago
+GitHub
+About us
+Blog
+Contact & support
+GitHub Enterprise
+Site status
+Applications
+GitHub for Mac
+GitHub for Windows
+GitHub for Eclipse
+GitHub mobile apps
+Services
+Gauges: Web analytics
+Speaker Deck: Presentations
+Gist: Code snippets
+Job board
+Documentation
+GitHub Help
+Developer API
+GitHub Flavored Markdown
+GitHub Pages
+More
+Training
+Students & teachers
+The Shop
+Plans & pricing
+The Octodex
+© 2013 GitHub, Inc. All rights reserved.
+Terms of Service Privacy Security
